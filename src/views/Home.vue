@@ -46,8 +46,8 @@ export default {
   },
   methods:{
     firstClue: function (){
-      if(document.querySelector("input").value === 'indice'){
-        document.querySelector("input").value = "7602"
+      if(document.querySelector(".input input").value === 'indice'){
+        document.querySelector(".input input").value = "7602"
       }
     },
     lastClue: function (){
