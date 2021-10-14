@@ -16,7 +16,7 @@
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
         <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" @change="displayCode()">
             <p>By checking this case, you accept the legal notices of Netflix for art </p>
         </div>
 
@@ -47,6 +47,16 @@ export default {
   name: 'Contact',
   components: {
 
+  },
+  methods:{
+    displayCode: function (){
+      if(document.querySelector("input[type=checkbox]").checked === true){
+        document.querySelector("button").textContent = "2659"
+      }else{
+        document.querySelector("button").textContent = "Envoyer"
+
+      }
+    }
   }
 }
 </script>

@@ -7,8 +7,8 @@
     </p>
     
     <div class="input">
-      <input type="text" placeholder="Tu as besoin de quoi ?">
-      <button>Rechercher</button>
+      <input type="text" placeholder="Tu as besoin de quoi ?" >
+      <button @click="firstClue()">Rechercher</button>
     </div>
 
     <div>
@@ -31,6 +31,18 @@ export default {
   components: {
     Articles
   },
+  data: function() {
+    return {
+      displayCode: false
+    };
+  },
+  methods:{
+    firstClue: function (){
+      if(document.querySelector("input").value === 'indice'){
+        document.querySelector("input").value = "7602"
+      }
+    }
+  }
 }
 </script>
 <style>

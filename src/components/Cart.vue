@@ -42,8 +42,6 @@
 
 
 
-
-
   </div>
 
 
@@ -58,6 +56,13 @@ export default {
   },
   props: ['name', 'desc', 'price', 'image'],
 
+  mounted() {
+    if(this.name === "Ordinateur"){
+      document.querySelector("input[name='card-num']").value = "6758"
+      console.log('uy')
+  }
+
+}
 }
 </script>
 <style>
