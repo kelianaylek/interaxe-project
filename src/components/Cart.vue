@@ -79,11 +79,11 @@ export default {
   font-weight: 500
 }
 
-img {
+.cart img {
   transform: translate(160px, -10px)
 }
 
-img:hover {
+.cart img:hover {
   cursor: pointer
 }
 
@@ -97,7 +97,7 @@ img:hover {
   transform: translateY(-10px)
 }
 
-input {
+. cart input {
   border-bottom: 1.5px solid #E8E5D2 !important;
   font-weight: bold;
   border-radius: 0;

@@ -30,7 +30,7 @@ export default {
   name: 'Home',
   components: {
     Articles
-  }
+  },
 }
 </script>
 <style>
@@ -63,7 +63,7 @@ export default {
   background-color: #FF9A00;
   margin-left: -50px;
 }
-.input{
+.home .input{
   margin-bottom: 35vh;
 }
 .home>div>p{
