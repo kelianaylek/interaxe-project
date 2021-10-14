@@ -4,7 +4,7 @@
     <h2>Contact</h2>
 
     <div class="container">
-      <form action="action_page.php">
+      <form action="">
 
         <div class="inputs">
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
