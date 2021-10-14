@@ -8,7 +8,7 @@
     
     <div class="input">
       <input type="text" placeholder="Tu as besoin de quoi ?">
-      <button>Rech</button>
+      <button>Rechercher</button>
     </div>
 
     <div>
@@ -53,6 +53,9 @@ export default {
   padding: 15px 30px 15px 30px;
   border: none;
   outline: none;
+}
+.home button{
+  color: white;
 }
 .home input{
   border-radius: 50px;

@@ -97,11 +97,13 @@ export default {
   transform: translateY(-10px)
 }
 
-. cart input {
+.cart input {
   border-bottom: 1.5px solid #E8E5D2 !important;
   font-weight: bold;
   border-radius: 0;
-  border: 0
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .form-group input:focus {
