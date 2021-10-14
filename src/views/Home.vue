@@ -3,13 +3,20 @@
 
     <p>Bienvenue dans le monde de <span>Jean Beseausse</span>
       <br>
-      plus de 10 produits sont disponibles dès <span>maintenant</span>
+      plus de <input @change="lastClue()" type="text" :value="itemNumber">produits sont disponibles dès <span>maintenant</span>
     </p>
-    
+
+
+    <div class="lastCode" v-if="itemNumber == 9">
+      9217
+    </div>
+
+
     <div class="input">
       <input type="text" placeholder="Tu as besoin de quoi ?" >
       <button @click="firstClue()">Rechercher</button>
     </div>
+
 
     <div>
       <p>Découvrir</p>
@@ -33,7 +40,8 @@ export default {
   },
   data: function() {
     return {
-      displayCode: false
+      displayCode: false,
+      itemNumber : 10,
     };
   },
   methods:{
@@ -41,12 +49,21 @@ export default {
       if(document.querySelector("input").value === 'indice'){
         document.querySelector("input").value = "7602"
       }
-    }
-  }
+    },
+    lastClue: function (){
+      this.itemNumber = document.querySelector("p>input").value
+    },
+  },
+
 }
 </script>
 <style>
-
+.home>p>input{
+  border: none;
+  width: 80px;
+  background-color: transparent;
+  color: white;
+}
 .home{
   height: 92vh;
   background-image: url("https://cdn.discordapp.com/attachments/784065465168691243/897787120998039613/unknown.png");
@@ -61,7 +78,7 @@ export default {
 .home p span{
   font-weight: bold;
 }
-.home input, .home button{
+.home .input input, .home button{
   padding: 15px 30px 15px 30px;
   border: none;
   outline: none;
@@ -69,7 +86,7 @@ export default {
 .home button{
   color: white;
 }
-.home input{
+.home .input input{
   border-radius: 50px;
   width: 50%;
 }
@@ -80,6 +97,7 @@ export default {
 }
 .home .input{
   margin-bottom: 35vh;
+
 }
 .home>div>p{
   color: white;
@@ -89,5 +107,9 @@ export default {
   height: 100vh;
   background-color: #232F3E;
 
+}
+.lastCode{
+  color: #FF9A00;
+  font-size: 20px;
 }
 </style>

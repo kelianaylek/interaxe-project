@@ -9,14 +9,12 @@
       </router-link>
 
     </div>
+    <router-link class="lastClue" to="/">Corrigez l'erreur dans le nombre d'articles...</router-link>
 
     <div class="menus">
 
       <router-link to="/contact">Contact</router-link>
     </div>
-
-
-
 
   </div>
   <router-view/>
@@ -53,5 +51,15 @@
   color: white;
   text-decoration: none;
   padding-left: 40px;
+}
+.lastClue{
+  color: #232F3E !important;
+  text-decoration: none;
+  font-size: 12px;
+
+}
+.lastClue:hover{
+  color: white !important;
+  transition: 2s ease all;
 }
 </style>
