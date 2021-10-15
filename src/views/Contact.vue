@@ -17,7 +17,7 @@
 
         <div class="check">
             <input type="checkbox" @change="displayCode()">
-            <p>By checking this case, you accept the legal notices of Netflix for art </p>
+            <p>En chochant cette case, vous acceptez les conditions générales d'utilisation d'Amazone..</p>
         </div>
 
         <button>Envoyer</button>
